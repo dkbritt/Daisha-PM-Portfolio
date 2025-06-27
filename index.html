@@ -5,10 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-  <title>Daisha | Product Management Portfolio</title>
+  <link rel="icon" href="assets/icons/db_techy.png" type="image/png" />
+  <title>Daisha • Product-Focused Web Creator with a Creative Edge</title>
+  <meta name="description" content="Explore Daisha’s portfolio—merging product strategy with creative frontend development and inclusive design." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="floating-botanicals">
+    <img src="assets/icons/leaf-1.svg" alt="" class="float-leaf leaf1" />
+    <img src="assets/icons/leaf-2.svg" alt="" class="float-leaf leaf2" />
+    <img src="assets/icons/leaf-3.svg" alt="" class="float-leaf leaf3" />
+  </div>
+
   <nav class="navbar">
     <ul>
       <li><a href="index.html" class="active">Home</a></li>
@@ -54,11 +62,11 @@
                 calcMode="spline" />
       </path>
     </svg>
-    <p class="hero-subtitle">Engineer-turned-Product-Manager with a passion for inclusive, thoughtful design.</p>
-    <p class="hero-tagline">Where strategy meets empathy and every feature begins with a human. 🌿</p>
+    <p class="hero-subtitle">Former QA engineer turned aspiring Product Manager.</p>
+    <p class="hero-tagline">Blending technical depth with inclusive design—one thoughtful decision at a time.🌿</p>
     <ul class="hero-highlights">
       <li>🧠 Product Mindset</li>
-      <li>💡 UX Curiosity</li>
+      <li>🔗 Tech Meets Empath</li>
       <li>🎯 PM in Progress</li>
     </ul>
     <a href="#projects" class="cta-button">Explore My Work</a>
@@ -70,16 +78,11 @@
       <div class="about-content">
         <img src="imgs/bday2.jpg" alt="Photo of Daisha" class="about-photo" />
         <div class="about-text">
-          <p>I’m a former QA engineer now transitioning into product management. I thrive where human-centered design meets technical execution. I love solving real problems, uplifting user voices, and creating space for better, more inclusive digital experiences.</p>
-          <p>Outside of work, I’m a puzzle-solving, food-loving, family-first kind of creative thinker.</p>
-
-          <p>I’m a former QA engineer now transitioning into product management. I thrive where human-centered design meets technical execution. I love solving real problems, uplifting user voices, and creating space for better, more inclusive digital experiences.</p>
-          <p>Outside of work, I’m a puzzle-solving, food-loving, family-first kind of creative thinker.</p>
-
-
-          <p>I’m a former QA engineer now transitioning into product management. I thrive where human-centered design meets technical execution. I love solving real problems, uplifting user voices, and creating space for better, more inclusive digital experiences.</p>
-          <p>Outside of work, I’m a puzzle-solving, food-loving, family-first kind of creative thinker.</p>
-
+          <p>Hi! I’m Daisha—Georgia Tech grad 🐝 with a degree in Computer Science, former QA engineer, and an aspiring Product Manager with a heart for people and process.</p>
+          <p>My career started in quality assurance, where I strengthened my instincts for usability, quality, and collaborative problem-solving. Now I’m shifting into product management, because I want to shape what gets built, not just test it. I thrive where human-centered design meets technical execution, and I believe in inclusive, thoughtful products that are built with purpose and intention.</p>
+          <p>Problem solving is my happy place—whether I’m untangling a workflow, optimizing a feature, or figuring out how to beat the next level of a puzzle-heavy video game 🎮🧠. I'm passionate about designing for equity and celebrating perspectives that often go unheard. To me, inclusion is that extra step that I believe should never get skipped.</p>
+          <p>When I’m not solving puzzles behind the screen, I’m solving them in games 🎮, planning my next food-fueled trip ✈️🍜, or chasing giggles with my daughter and pup 👧🏽🐾</p>
+          <p>I bring curiosity, strategic thinking, and strong communication skills to every room I walk into—, plus a deep respect for engineering, collaboration, and the humans we’re building for.</p>
         </div>
       </div>
     </div>
@@ -98,10 +101,11 @@
         <span class="bubble"></span>
       </div>
       <ul>
-      <li>🧩 I once redesigned a dashboard inspired by a puzzle</li>
+      <li>🧩 Puzzles taught me how to stay calm when nothing fits (yet)</li>
+      <li>🍱 I judge a city by its food...and the discoverability of its hidden gems</li>
+      <li>🌍 Travel keeps me grounded, curious, and perpetually inspire</li>
+      <li>🛠️ Built my career in bugs—now I’m building for impact</li>
       <li>🎮 Gaming helped me understand product loops</li>
-      <li>🍜 Ramen + user testing = peak happiness</li>
-      <li>🌿 My superpower? Listening for the edges of a problem</li>
     </ul>
   </section>
 
@@ -117,7 +121,7 @@
 
   <section class="cta-footer fade-in">
     <p>Curious to see what I’m building next?</p>
-    <a href="#projects" class="cta-button">Take a look at my projects</a>
+    <a href="projects.html" class="cta-button">Take a look at my projects</a>
   </section>
 
   <section class="contact-preview fade-in">
@@ -132,10 +136,12 @@
 
     <div class="contact-content">
       <h2>Let’s Build Something Thoughtful</h2>
-      <p>Whether it’s product strategy, inclusive design, or a good ramen rec—I'm always up for a meaningful exchange.</p>
-      <a href="#contact" class="cta-button">Get in Touch</a>
+      <p>Whether it’s product strategy, inclusive design, or a good restaurant rec—I'm always up for a meaningful exchange.</p>
+      <a href="contact.html" class="cta-button">Get in Touch</a>
     </div>
   </section>
+
+  <button id="backToTop" title="Back to top">↑</button>
 
   <footer class="footer">
     <p>© 2025 Daisha B. • 
@@ -168,6 +174,26 @@
       index = (index + 1) % emojis.length;
       el.textContent = emojis[index];
     }, 3000);
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const backToTop = document.getElementById("backToTop");
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 400) {
+          backToTop.style.display = "flex";
+          backToTop.style.animation = "bounceIn 0.4s ease";
+        } else {
+          backToTop.style.display = "none";
+          backToTop.style.animation = "";
+        }
+      });
+
+      backToTop.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
   </script>
 
 </body>

@@ -3,12 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gallery | Daisha</title>
+  <link rel="icon" href="assets/icons/db_techy.png" type="image/png" />
+  <title>Inspiration Gallery • Design Moments Curated by Daisha</title>
+  <meta name="description" content="A curated inspiration gallery featuring visual references and creative sparks behind Daisha’s process." />
   <link rel="stylesheet" href="gallery.css" />
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="floating-botanicals">
+    <img src="assets/icons/leaf-1.svg" alt="" class="float-leaf leaf1" />
+    <img src="assets/icons/leaf-2.svg" alt="" class="float-leaf leaf2" />
+    <img src="assets/icons/leaf-3.svg" alt="" class="float-leaf leaf3" />
+  </div>
+  
   <nav class="navbar">
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -22,17 +31,83 @@
     <h1>Inspiration Gallery</h1>
     <p class="gallery-intro">Bits of beauty, sparks of joy, and creative fuel—from design details to meaningful moments.</p>
     <div class="gallery-imgs">
-      <img src="imgs/bday.jpg" alt="Self photo after my bday celebration" />
-      <img src="imgs/CSS.png" alt="CSS which I used to style this website!" />
-      <img src="imgs/bday2.jpg" alt="Basking in the LA golden hour" />
-      <img src="imgs/git.png" alt="Git version control I use often to track my projects" />
-      <img src="imgs/gokart.jpg" alt="Go Karting in Shibuya, Tokyo!" />
-      <img src="imgs/HTML5.png" alt="HTML which I use frequently for my web projects" />
-      <img src="imgs/kimono.jpeg" alt="Visiting a Japanese temple while wearing a traditional Kimono" />
-      <img src="imgs/javascript.png" alt="Javascript which is now part of my regular tech stack" />
-      <img src="imgs/reflection.jpg" alt="Art piece from a Tokyo art exhibit" />
-      <img src="imgs/Python.png" alt="Python is also part of my usual tech stack" />
-      <img src="imgs/sushi.jpg" alt="A sushi platter I created during a sushi class in Tokyo!" />
+      <div class="gallery-item">
+        <img src="imgs/bday.jpg" alt="Self photo after my bday celebration" />
+        <div class="overlay">
+          <span class="overlay-text">View</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="imgs/CSS.png" alt="CSS which I used to style this website!" />
+        <div class="overlay">
+          <span class="overlay-text">View</span>
+        </div>
+      </div>
+      
+      <div class="gallery-item">
+        <img src="imgs/bday2.jpg" alt="Basking in the LA golden hour" />
+        <div class="overlay">
+          <span class="overlay-text">View</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="imgs/git.png" alt="Git version control I use often to track my projects" />
+        <div class="overlay">
+          <span class="overlay-text">View</span>
+        </div>
+      </div>
+      
+      <div class="gallery-item">
+        <img src="imgs/gokart.jpg" alt="Go Karting in Shibuya, Tokyo!" />
+        <div class="overlay">
+          <span class="overlay-text">View</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="imgs/kimono.jpeg" alt="Visiting a Japanese temple while wearing a traditional Kimono" />
+        <div class="overlay">
+          <span class="overlay-text">View</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="imgs/javascript.png" alt="Javascript which is now part of my regular tech stack" />
+        <div class="overlay">
+          <span class="overlay-text">View</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="imgs/reflection.jpg" alt="Art piece from a Tokyo art exhibit" />
+        <div class="overlay">
+          <span class="overlay-text">View</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="imgs/HTML5.png" alt="HTML which I use frequently for my web projects" />
+        <div class="overlay">
+          <span class="overlay-text">View</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="imgs/Python.png" alt="Python is also part of my usual tech stack" />
+        <div class="overlay">
+          <span class="overlay-text">View</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="imgs/sushi.jpg" alt="A sushi platter I created during a sushi class in Tokyo!" />
+        <div class="overlay">
+          <span class="overlay-text">View</span>
+        </div>
+      </div>
+
       <!-- etc. -->
     </div>
   </section>
@@ -43,6 +118,29 @@
       <p class="lightbox-caption"></p>
     </div>
   </div>
+
+  <button id="backToTop" title="Back to top">↑</button>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const backToTop = document.getElementById("backToTop");
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 400) {
+          backToTop.style.display = "flex";
+          backToTop.style.animation = "bounceIn 0.4s ease";
+        } else {
+          backToTop.style.display = "none";
+          backToTop.style.animation = "";
+        }
+      });
+
+      backToTop.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+  </script>
+
   <script src="gallery.js"></script>
 </body>
 </html>

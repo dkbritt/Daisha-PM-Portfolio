@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found</title>
+
+  <!-- 🌸 Custom Favicon -->
+  <link rel="icon" href="assets/icons/db_leaf.png" type="image/png" />
+
+  <!-- 🌿 Stylesheets -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- ✨ SEO -->
+  <meta name="description" content="Lost in the leaves? This page doesn’t exist—but you can return to Daisha’s portfolio and get back on track." />
+</head>
+<body class="error-page">
+
+  <!-- 🍃 Botanical Background Elements -->
+  <div class="floating-botanicals">
+    <img src="assets/icons/leaf-1.svg" alt="" class="float-leaf leaf1" />
+    <img src="assets/icons/leaf-2.svg" alt="" class="float-leaf leaf2" />
+    <img src="assets/icons/leaf-3.svg" alt="" class="float-leaf leaf3" />
+  </div>
+
+  <!-- 🌈 Subtle Animated Gradient -->
+  <style>
+    body.error-page {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      color: #333;
+      background: linear-gradient(-45deg, #f2eee9, #e6f0ea, #f7eee6, #dbe6da);
+      background-size: 400% 400%;
+      animation: softFlow 25s ease infinite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .container {
+      z-index: 1;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.75);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      background-color: #61775c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #4c5f47;
+    }
+
+    @keyframes softFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* 🍃 Leaf Animation (reuse from main CSS) */
+    .floating-botanicals {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .float-leaf {
+      position: absolute;
+      width: 80px;
+      opacity: 0.08;
+      animation: floatScroll 30s linear infinite;
+    }
+
+    .leaf1 { left: 10%; top: 120%; animation-delay: 0s; }
+    .leaf2 { left: 50%; top: 130%; animation-delay: 5s; }
+    .leaf3 { left: 75%; top: 140%; animation-delay: 10s; }
+
+    @keyframes floatScroll {
+      0%   { transform: translateY(0) rotate(0deg); }
+      100% { transform: translateY(-200vh) rotate(360deg); }
+    }
+
+    .haiku {
+      font-style: italic;
+      font-size: 1rem;
+      color: #4c5f47;
+      opacity: 0;
+      transition: opacity 1.5s ease-in;
+      margin-top: 2rem;
+    }
+    .haiku.visible {
+      opacity: 1;
+    }
+  </style>
+
+  <!-- 💬 Content -->
+  <div class="container">
+    <h1>Oops! 404 🌿</h1>
+    <p>This page doesn’t exist... or maybe it just wandered off for a walk.</p>
+    <a href="index.html" class="btn">Take Me Home</a>
+    <br><br>
+    <p id="haiku" class="haiku">Wandered off the path—<br />
+      a leaf in the web’s whisper.<br />
+      Let’s guide you back home.</p>
+  </div>
+
+  <script>
+    window.addEventListener("load", function () {
+      setTimeout(function () {
+        const haiku = document.getElementById("haiku");
+        haiku.classList.add("visible");
+      }, 2200); // delay in ms
+    });
+  </script>
+</body>
+</html>

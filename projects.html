@@ -5,10 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-  <title>Projects — Daisha</title>
+  <link rel="icon" href="assets/icons/db_techy.png" type="image/png" />
+  <title>Projects • Daisha’s Work in Product Design & Development</title>
+  <meta name="description" content="Featured product and web projects by Daisha, blending user empathy with technical precision." />
   <link rel="stylesheet" href="projects.css" />
 </head>
 <body>
+  <div class="floating-botanicals">
+    <img src="assets/icons/leaf-1.svg" alt="" class="float-leaf leaf1" />
+    <img src="assets/icons/leaf-2.svg" alt="" class="float-leaf leaf2" />
+    <img src="assets/icons/leaf-3.svg" alt="" class="float-leaf leaf3" />
+  </div>
+  
   <nav class="navbar">
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -95,6 +103,28 @@
       <a href="#" target="_blank" class="modal-cta">View Live ↗</a>
     </div>
   </div>
+
+  <button id="backToTop" title="Back to top">↑</button>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const backToTop = document.getElementById("backToTop");
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 400) {
+          backToTop.style.display = "flex";
+          backToTop.style.animation = "bounceIn 0.4s ease";
+        } else {
+          backToTop.style.display = "none";
+          backToTop.style.animation = "";
+        }
+      });
+
+      backToTop.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+  </script>
 
   <script src="projects.js"></script>
 </body>
