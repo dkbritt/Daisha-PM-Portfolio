@@ -11,7 +11,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--light-beige);
-  /* background: linear-gradient(145deg, #f7f5f0, #eaf4ed); */
   color: #2e2e2e;
   opacity: 0;
   animation: fadeIn ease 1s forwards;
@@ -158,10 +157,6 @@ h1, h2, h3 {
   position: relative;
   display: inline-block;
   font-family: 'Caveat', cursive;
-  /* font-size: 1.4rem; */
-  /* margin-top: 2rem; */
-  /* color: #444; */
-
 }
 
 .hand-divider {
@@ -170,19 +165,6 @@ h1, h2, h3 {
   max-width: 120px;
   opacity: 0.7;
 }
-
-/* .hero-name::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  background-color: var(--sage-green);
-  bottom: -6px;
-  left: 0;
-  animation: swipeIn 1.2s ease-out 0.5s forwards;
-  transform: scaleX(0);
-  transform-origin: left;
-} */
 
 @keyframes swipeIn {
   to {
@@ -227,9 +209,6 @@ h1, h2, h3 {
   font-size: 2.5rem;
   animation: floatEmoji 2.5s ease-in-out infinite;
   margin-bottom: 70px;
-  /* position: absolute;
-  top: 1rem;
-  left: 1rem; */
 }
 
 .hero h1 {
@@ -248,11 +227,6 @@ h1, h2, h3 {
   text-align: center;
 }
 
-/* .project-preview h2 {
-  font-size: 2rem;
-  color: var(--sage-green);
-  margin-bottom: 1.5rem;
-} */
 
 /* Mini card row */
 .mini-cards {
@@ -388,9 +362,6 @@ h1, h2, h3 {
 .emoji-float {
   font-size: 2.5rem;
   animation: floatEmoji 2.5s ease-in-out infinite;
-  /* position: absolute;
-  top: 1rem;
-  left: 1rem; */
 }
 
 /* ===== Buttons ===== */
@@ -527,10 +498,6 @@ section {
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
-
-/* .contact-preview .cta-button:hover {
-  background-color: #3c6f50;
-} */
 
 /* ===== Footer ===== */
 .footer {

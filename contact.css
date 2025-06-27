@@ -56,8 +56,6 @@ h1, h2, h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 2rem; */
-  /* min-height: 80vh; */
 }
 
 .contact-form {
