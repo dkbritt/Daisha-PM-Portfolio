@@ -1,43 +1,47 @@
-# Daisha-PM-Portfolio
+# 💻 Daisha’s Portfolio
 
-This is a simple portfolio website showcasing projects, a gallery, and contact information. The design features neutral colors with sage green accents, providing a polished yet fun aesthetic.
+Welcome! I’m Daisha — a Georgia Tech 🐝 grad, engineer-turned-aspiring Product Manager, and advocate for inclusive, thoughtful design. This portfolio is where my love for technical problem-solving meets human-centered creativity.
 
-## Project Structure
+---
 
-```
-portfolio-website
-├── index.html
-├── style.css
-└── README.md
-```
+## 🔧 What You’ll Find Here
+- ✨ Interactive projects that blend frontend finesse with product thinking  
+- 🧩 Code built with clarity, care, and accessibility in mind  
+- 🎯 Features rooted in empathy, iterative design, and a curiosity for how real people interact with digital tools  
 
-## Files Description
+---
 
-- **index.html**: Contains the structure of the home page, including a navigation bar with links for "home," "projects," "gallery," and "contact." Each section features fade-in animations, and buttons animate on hover.
+## 💡 About Me
 
-- **style.css**: Contains the styles for the home page, defining the color scheme, font styles, and animations for the navigation, sections, and buttons.
+I started in QA, where I learned to test with precision and think like a user. Now, I'm making the leap into product—bringing my engineering background, collaboration mindset, and a deep commitment to inclusion along for the ride.
 
-## Getting Started
+When I'm not debugging or wireframing, I’m probably:
+- chasing my daughter around  
+- solving a puzzle  
+- planning my next food adventure 🍜✈️  
 
-To set up and run the portfolio website locally, follow these steps:
+---
 
-1. **Clone the repository**:
-   ```
-   git clone <repository-url>
-   ```
+## 🛠️ Tech Stack Highlights
 
-2. **Navigate to the project directory**:
-   ```
-   cd portfolio-website
-   ```
+**Frontend**  
+`HTML` · `CSS` · `JavaScript` · `React` · `Redux`
 
-3. **Open the `index.html` file in your web browser**:
-   You can simply double-click the `index.html` file or open it with your preferred web browser.
+**Backend**  
+`Node.js` · `Python` · `SQL`
 
-## Customization
+**Extras**  
+Responsive design · Testing · CI/CD pipelines
 
-Feel free to customize the content in `index.html` and the styles in `style.css` to better reflect your personal brand and projects.
+---
 
-## License
+## 🌱 In Progress
 
-This project is open-source and available under the MIT License.
+- 🍷 Building a wine ordering system for my father-in-law  
+- 🎥 Launching a tech content channel geared toward underrepresented communities  
+- 🧠 Always learning, iterating, and tinkering with new ideas  
+
+---
+
+Thanks for stopping by!  
+Let’s build something that matters 🌿
