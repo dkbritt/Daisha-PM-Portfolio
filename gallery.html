@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | Daisha</title>
+  <link rel="stylesheet" href="gallery.css" />
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="gallery">
+    <h1>Inspiration Gallery</h1>
+    <p class="gallery-intro">Bits of beauty, sparks of joy, and creative fuel—from design details to meaningful moments.</p>
+    <div class="gallery-imgs">
+      <img src="imgs/bday.jpg" alt="Self photo after my bday celebration" />
+      <img src="imgs/CSS.png" alt="CSS which I used to style this website!" />
+      <img src="imgs/bday2.jpg" alt="Basking in the LA golden hour" />
+      <img src="imgs/git.png" alt="Git version control I use often to track my projects" />
+      <img src="imgs/gokart.jpg" alt="Go Karting in Shibuya, Tokyo!" />
+      <img src="imgs/HTML5.png" alt="HTML which I use frequently for my web projects" />
+      <img src="imgs/kimono.jpeg" alt="Visiting a Japanese temple while wearing a traditional Kimono" />
+      <img src="imgs/javascript.png" alt="Javascript which is now part of my regular tech stack" />
+      <img src="imgs/reflection.jpg" alt="Art piece from a Tokyo art exhibit" />
+      <img src="imgs/Python.png" alt="Python is also part of my usual tech stack" />
+      <img src="imgs/sushi.jpg" alt="A sushi platter I created during a sushi class in Tokyo!" />
+      <!-- etc. -->
+    </div>
+  </section>
+  <div class="lightbox hidden">
+    <div class="lightbox-content">
+      <button class="close-lightbox">×</button>
+      <img src="" alt="" class="lightbox-img" />
+      <p class="lightbox-caption"></p>
+    </div>
+  </div>
+  <script src="gallery.js"></script>
+</body>
+</html>

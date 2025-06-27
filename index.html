@@ -3,30 +3,116 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
   <title>Daisha | Product Management Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <nav class="navbar">
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
       <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
   <header class="hero slide-in">
-    <h1>Hi, I’m Daisha</h1>
-    <div class="emoji-float">👋🏾</div>
-    <p>Engineer-turned-Product-Manager with a passion for inclusive, thoughtful design.</p>
+    <svg class="hero-bg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#e6f0e9"/>
+          <stop offset="100%" stop-color="#cbe6d9"/>
+        </linearGradient>
+      </defs>
+      <path fill="url(#grad)">
+        <animate attributeName="d" dur="10s" repeatCount="indefinite"
+          values="
+            M 0,200 C 50,150 150,250 200,200 C 250,150 350,250 400,200 L 400,400 L 0,400 Z;
+            M 0,200 C 70,130 130,270 200,200 C 270,130 330,270 400,200 L 400,400 L 0,400 Z;
+            M 0,200 C 50,150 150,250 200,200 C 250,150 350,250 400,200 L 400,400 L 0,400 Z
+          " />
+      </path>
+    </svg>
+    <div class="emoji-float" id="emojiCycle">👋🏾</div>
+    <h1>Hi, I’m <span class="hero-name">Daisha</span></h1>
+    <svg class="hand-divider" viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M5 10 Q 25 0, 50 10 T 95 10"
+            stroke="#4c8c64"
+            stroke-width="2"
+            fill="none"
+            stroke-linecap="round"
+            stroke-dasharray="100"
+            stroke-dashoffset="100">
+        <animate attributeName="stroke-dashoffset"
+                from="100" to="0"
+                dur="1.2s"
+                begin="0.3s"
+                fill="freeze"
+                keySplines="0.42 0 0.58 1"
+                calcMode="spline" />
+      </path>
+    </svg>
+    <p class="hero-subtitle">Engineer-turned-Product-Manager with a passion for inclusive, thoughtful design.</p>
+    <p class="hero-tagline">Where strategy meets empathy and every feature begins with a human. 🌿</p>
+    <ul class="hero-highlights">
+      <li>🧠 Product Mindset</li>
+      <li>💡 UX Curiosity</li>
+      <li>🎯 PM in Progress</li>
+    </ul>
     <a href="#projects" class="cta-button">Explore My Work</a>
   </header>
 
   <section class="about fade-in">
-    <h2>About Me</h2>
-    <p>I’m a former QA engineer now transitioning into product management. I thrive where human-centered design meets technical execution. I love solving real problems, uplifting user voices, and creating space for better, more inclusive digital experiences.</p>
-    <p>Outside of work, I’m a puzzle-solving, food-loving, family-first kind of creative thinker.</p>
+    <div class="frosted-glass">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="imgs/bday2.jpg" alt="Photo of Daisha" class="about-photo" />
+        <div class="about-text">
+          <p>I’m a former QA engineer now transitioning into product management. I thrive where human-centered design meets technical execution. I love solving real problems, uplifting user voices, and creating space for better, more inclusive digital experiences.</p>
+          <p>Outside of work, I’m a puzzle-solving, food-loving, family-first kind of creative thinker.</p>
+
+          <p>I’m a former QA engineer now transitioning into product management. I thrive where human-centered design meets technical execution. I love solving real problems, uplifting user voices, and creating space for better, more inclusive digital experiences.</p>
+          <p>Outside of work, I’m a puzzle-solving, food-loving, family-first kind of creative thinker.</p>
+
+
+          <p>I’m a former QA engineer now transitioning into product management. I thrive where human-centered design meets technical execution. I love solving real problems, uplifting user voices, and creating space for better, more inclusive digital experiences.</p>
+          <p>Outside of work, I’m a puzzle-solving, food-loving, family-first kind of creative thinker.</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="personality-row fade-in">
+      <div class="bubble-container">
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+        <span class="bubble"></span>
+      </div>
+      <ul>
+      <li>🧩 I once redesigned a dashboard inspired by a puzzle</li>
+      <li>🎮 Gaming helped me understand product loops</li>
+      <li>🍜 Ramen + user testing = peak happiness</li>
+      <li>🌿 My superpower? Listening for the edges of a problem</li>
+    </ul>
+  </section>
+
+  <section class="project-preview fade-in">
+    <h2>Projects</h2>
+    <div class="mini-cards">
+      <a href="projects.html#pinterest" class="mini-card">📌 Pinterest Critique</a>
+      <a href="projects.html#accessibility" class="mini-card">🎯 Accessibility Audit</a>
+      <a href="projects.html#case-study" class="mini-card">🛠️ Case Study</a>
+      <a href="projects.html#future-proj" class="mini-card">🛠️ Future Project</a>
+    </div>
   </section>
 
   <section class="cta-footer fade-in">
@@ -34,33 +120,55 @@
     <a href="#projects" class="cta-button">Take a look at my projects</a>
   </section>
 
+  <section class="contact-preview fade-in">
+    <!-- Decorative background SVG -->
+    <svg class="contact-bg" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path fill="#e6f0ea" d="M0,160 C200,100 600,200 800,160 L800,400 L0,400 Z"/>
+    </svg>
 
-  <section id="projects" class="projects fade-in">
-  <h2>Projects</h2>
-  <div class="card-grid">
-    <div class="card">
-      <h3>Pinterest Product Critique</h3>
-      <p>Exploring user experience through a curated Summer board challenge.</p>
-      <span class="status in-progress">In Progress</span>
+    <!-- Floating emoji accents -->
+    <div class="icon-accent left">💬</div>
+    <div class="icon-accent right">✨</div>
+
+    <div class="contact-content">
+      <h2>Let’s Build Something Thoughtful</h2>
+      <p>Whether it’s product strategy, inclusive design, or a good ramen rec—I'm always up for a meaningful exchange.</p>
+      <a href="#contact" class="cta-button">Get in Touch</a>
     </div>
-    <div class="card">
-      <h3>Accessibility Audit</h3>
-      <p>A UX walkthrough highlighting edge-case inclusion opportunities.</p>
-      <span class="status coming-soon">Coming Soon</span>
-    </div>
-    <div class="card">
-      <h3>Future Case Study</h3>
-      <p>Reserved for my next hands-on PM build—stay tuned!</p>
-      <span class="status coming-soon">Coming Soon</span>
-    </div>
-  </div>
-</section>
+  </section>
 
   <footer class="footer">
-    <p>© 2025 Daisha • 
+    <p>© 2025 Daisha B. • 
       <a href="https://www.linkedin.com/in/daisha-britt/" target="_blank" rel="noopener">LinkedIn</a> • 
       <a href="https://github.com/dkbritt/" target="_blank" rel="noopener">GitHub</a>
     </p>
   </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // Animate once
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+  </script>
+
+  <script>
+    const emojis = ["👋🏾", "🧩", "🧳", "🎮", "💡"];
+    let index = 0;
+
+    setInterval(() => {
+      const el = document.getElementById("emojiCycle");
+      index = (index + 1) % emojis.length;
+      el.textContent = emojis[index];
+    }, 3000);
+  </script>
+
 </body>
 </html>

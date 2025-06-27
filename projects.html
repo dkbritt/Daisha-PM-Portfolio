@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <title>Projects — Daisha</title>
+  <link rel="stylesheet" href="projects.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="projects-header">
+    <h1>Projects</h1>
+    <p>A few thoughtful builds from my journey—click any card to peek inside.</p>
+  </header>
+
+  <section class="projects-grid">
+    <article class="project-card" data-project="1">
+      <img src="mockup1.jpg" alt="Project thumbnail" />
+      <h3>Recipe Remix</h3>
+      <p>Smart recipes for busy humans</p>
+      <div class="tags"><span>#React</span><span>#UX</span></div>
+    </article>
+
+    <article class="project-card" data-project="2">
+      <img src="mockup2.jpg" alt="Project thumbnail" />
+      <h3>Bug Squashr</h3>
+      <p>Issue triage meets delight</p>
+      <div class="tags"><span>#PM</span><span>#Automation</span></div>
+    </article>
+
+    <article class="project-card" data-project="3">
+      <img src="mockup3.jpg" alt="Project thumbnail" />
+      <h3>Future Project</h3>
+      <p>Smart recipes for busy humans</p>
+      <div class="tags"><span>#React</span><span>#UX</span></div>
+    </article>
+
+    <article class="project-card" data-project="4">
+      <img src="mockup4.jpg" alt="Project thumbnail" />
+      <h3>Future Project</h3>
+      <p>Issue triage meets delight</p>
+      <div class="tags"><span>#PM</span><span>#Automation</span></div>
+    </article>
+
+
+    <article class="project-card" data-project="5">
+      <img src="mockup5.jpg" alt="Project thumbnail" />
+      <h3>Recipe Remix</h3>
+      <p>Smart recipes for busy humans</p>
+      <div class="tags"><span>#React</span><span>#UX</span></div>
+    </article>
+
+    <article class="project-card" data-project="6">
+      <img src="mockup6.jpg" alt="Project thumbnail" />
+      <h3>Bug Squashr</h3>
+      <p>Issue triage meets delight</p>
+      <div class="tags"><span>#PM</span><span>#Automation</span></div>
+    </article>
+
+    <article class="project-card" data-project="7">
+      <img src="mockup7.jpg" alt="Project thumbnail" />
+      <h3>Future Project</h3>
+      <p>Smart recipes for busy humans</p>
+      <div class="tags"><span>#React</span><span>#UX</span></div>
+    </article>
+
+    <article class="project-card" data-project="8">
+      <img src="mockup8.jpg" alt="Project thumbnail" />
+      <h3>Future Project</h3>
+      <p>Issue triage meets delight</p>
+      <div class="tags"><span>#PM</span><span>#Automation</span></div>
+    </article>
+
+    <!-- More project cards... -->
+  </section>
+
+  <!-- Modal Overlay -->
+  <div class="project-modal hidden">
+    <div class="modal-content">
+      <button class="close-btn">×</button>
+      <img src="mockup1-large.jpg" alt="Full project view" />
+      <h3>Project Title</h3>
+      <p><strong>Role:</strong> PM & Dev | <strong>Tools:</strong> React, Figma</p>
+      <p class="project-description">This is where your detailed writeup goes—process, challenges, design thinking, etc.</p>
+      <a href="#" target="_blank" class="modal-cta">View Live ↗</a>
+    </div>
+  </div>
+
+  <script src="projects.js"></script>
+</body>
+</html>

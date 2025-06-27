@@ -1,0 +1,156 @@
+body {
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  background: #f9f8f4;
+  color: #333;
+}
+
+/* ===== Navigation ===== */
+.navbar {
+  background-color: var(--light-beige);
+  padding: 1rem 2rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a:hover {
+  color: var(--sage-green);
+}
+
+.navbar a {
+  color: #444;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.navbar a.active {
+  background-color: #e6f0ea;
+  color: #2e5945;
+  font-weight: 600;
+}
+
+/*  */
+
+.projects-header {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.project-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  margin: 1rem;
+  font-size: 1.25rem;
+}
+
+.project-card p {
+  margin: 0 1rem 1rem;
+  color: #666;
+}
+
+.tags {
+  margin: 0 1rem 1.5rem;
+}
+
+.tags span {
+  background: #e6f0ea;
+  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  margin-right: 0.4rem;
+}
+
+/* Modal */
+.project-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  padding: 2rem;
+}
+
+.project-modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 700px;
+  width: 100%;
+  position: relative;
+}
+
+.modal-content img {
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+}
+
+.project-description {
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+.modal-cta {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: #4c8c64;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}

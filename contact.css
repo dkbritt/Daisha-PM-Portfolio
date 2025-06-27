@@ -1,0 +1,141 @@
+body {
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  background: #f9f8f4;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  font-size: 2rem;
+  color: #4c8c64;
+  margin-bottom: 1.5rem;
+}
+
+.contact-hero {
+  text-align: center;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.contact-form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 2rem; */
+  /* min-height: 80vh; */
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  display: grid;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+
+
+.contact-form label {
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+.contact-form button {
+  background-color: #4c8c64;
+  color: white;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #3a6b4d;
+}
+
+/* ===== Navigation ===== */
+.navbar {
+  background-color: var(--light-beige);
+  padding: 1rem 2rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a:hover {
+  color: var(--sage-green);
+}
+
+.navbar a {
+  color: #444;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.navbar a.active {
+  background-color: #e6f0ea;
+  color: #2e5945;
+  font-weight: 600;
+}
+
+/*  */
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.form-success {
+  text-align: center;
+  color: #4c8c64;
+  margin-top: 1.5rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.form-success.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
