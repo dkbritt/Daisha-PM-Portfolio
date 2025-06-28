@@ -12,6 +12,10 @@ body {
   100% { background-position: 0% 50%; }
 }
 
+h1, h2, h3 {
+  color: #4c5f47;
+}
+
 #backToTop {
   position: fixed;
   bottom: 40px;
@@ -126,7 +130,6 @@ body {
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.05);
   cursor: pointer;
-  overflow: hidden;
   transition: transform 0.3s ease;
 }
 
@@ -151,6 +154,9 @@ body {
 }
 
 .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
   margin: 0 1rem 1.5rem;
 }
 
@@ -159,7 +165,7 @@ body {
   border-radius: 6px;
   padding: 0.3rem 0.6rem;
   font-size: 0.8rem;
-  margin-right: 0.4rem;
+  margin: 0.4rem;
 }
 
 /* Modal */

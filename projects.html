@@ -33,74 +33,67 @@
 
   <section class="projects-grid">
     <article class="project-card" data-project="1">
-      <img src="mockup1.jpg" alt="Project thumbnail" />
-      <h3>Recipe Remix</h3>
-      <p>Smart recipes for busy humans</p>
-      <div class="tags"><span>#React</span><span>#UX</span></div>
+      <img src="imgs/pc.jpg" alt="Project thumbnail" />
+      <h3>👩🏾‍💻 Reddit Clone</h3>
+      <p>A minimalist reimagining of Reddit—built to explore full-stack flow, feature priority, and community UX.</p>
+      <div class="tags"><span>#HTML</span><span>#CSS</span><span>#JavaScript</span><span>#React</span><span>#Node.js</span><span>#UX</span></div>
     </article>
 
     <article class="project-card" data-project="2">
-      <img src="mockup2.jpg" alt="Project thumbnail" />
-      <h3>Bug Squashr</h3>
-      <p>Issue triage meets delight</p>
-      <div class="tags"><span>#PM</span><span>#Automation</span></div>
+      <img src="imgs/wine.jpg" alt="Project thumbnail" />
+      <h3>🍷 Wine Ordering System</h3>
+      <p>A cozy digital storefront turning family wine-sharing into a user-friendly ordering experience.</p>
+      <div class="tags"><span>#HTML</span><span>#CSS</span><span>#JavaScript</span><span>#React</span><br><span>#GoogleSheets</span></div>
     </article>
 
     <article class="project-card" data-project="3">
-      <img src="mockup3.jpg" alt="Project thumbnail" />
-      <h3>Future Project</h3>
-      <p>Smart recipes for busy humans</p>
-      <div class="tags"><span>#React</span><span>#UX</span></div>
+      <img src="imgs/tiktok.jpg" alt="Project thumbnail" />
+      <h3>📱 Tech Content Channel</h3>
+      <p>Inclusive tech content, crafted to inform and empower underrepresented creators—one reel at a time.</p>
+      <div class="tags"><span>#Canva</span><span>#CapCut</span><span>#Figma</span><span>#Notion</span><span>#Later</span></div>
     </article>
 
     <article class="project-card" data-project="4">
-      <img src="mockup4.jpg" alt="Project thumbnail" />
-      <h3>Future Project</h3>
-      <p>Issue triage meets delight</p>
-      <div class="tags"><span>#PM</span><span>#Automation</span></div>
+      <img src="imgs/food.jpg" alt="Project thumbnail" />
+      <h3>🥡 Local Food Discovery App</h3>
+      <p>A mood-based app for discovering under-the-radar local food gems—because “hungry” isn’t a filter.</p>
+      <div class="tags"><span>#Idea</span><span>#Future Project</span></div>
     </article>
 
 
     <article class="project-card" data-project="5">
-      <img src="mockup5.jpg" alt="Project thumbnail" />
-      <h3>Recipe Remix</h3>
-      <p>Smart recipes for busy humans</p>
-      <div class="tags"><span>#React</span><span>#UX</span></div>
+      <img src="imgs/travel.jpg" alt="Project thumbnail" />
+      <h3>🛠️ Tiny SaaS Tool: Family Trip Planner</h3>
+      <p>Planning a trip shouldn’t feel harder than taking one.</p>
+      <div class="tags"><span>#Idea</span><span>#Future Project</span></div>
     </article>
 
     <article class="project-card" data-project="6">
-      <img src="mockup6.jpg" alt="Project thumbnail" />
-      <h3>Bug Squashr</h3>
-      <p>Issue triage meets delight</p>
-      <div class="tags"><span>#PM</span><span>#Automation</span></div>
+      <img src="imgs/blog.jpg" alt="Project thumbnail" />
+      <h3>📖 Product Thinking Blog / Micro-Case Series</h3>
+      <p>Bite-sized breakdowns of apps, features, and everyday UX—through the lens of a PM in progress.</p>
+      <div class="tags"><span>#Idea</span><span>#Future Project</span></div>
     </article>
 
-    <article class="project-card" data-project="7">
-      <img src="mockup7.jpg" alt="Project thumbnail" />
-      <h3>Future Project</h3>
-      <p>Smart recipes for busy humans</p>
-      <div class="tags"><span>#React</span><span>#UX</span></div>
-    </article>
-
-    <article class="project-card" data-project="8">
-      <img src="mockup8.jpg" alt="Project thumbnail" />
-      <h3>Future Project</h3>
-      <p>Issue triage meets delight</p>
-      <div class="tags"><span>#PM</span><span>#Automation</span></div>
-    </article>
 
     <!-- More project cards... -->
   </section>
 
   <!-- Modal Overlay -->
-  <div class="project-modal hidden">
+  <div class="project-modal hidden" id="modal">
     <div class="modal-content">
+      <img class="modal-img"/>
+      <h3 id="modal-title"></h3>
+      <p id="modal-overview"></p>
+      <h4>🧰 My Role:</h4>
+      <p id="modal-role"></p>
+      <h4>⚙️ Tech Stack:</h4>
+      <p id="modal-techstack"></p>
+      <h4>💡 Description:</h4>
+      <p id="modal-descr"></p>
+      <h4>🌱 Product Takeaway:</h4>
+      <p id="modal-takeaway"></p>
       <button class="close-btn">×</button>
-      <img src="mockup1-large.jpg" alt="Full project view" />
-      <h3>Project Title</h3>
-      <p><strong>Role:</strong> PM & Dev | <strong>Tools:</strong> React, Figma</p>
-      <p class="project-description">This is where your detailed writeup goes—process, challenges, design thinking, etc.</p>
-      <a href="#" target="_blank" class="modal-cta">View Live ↗</a>
     </div>
   </div>
 
