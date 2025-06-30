@@ -169,61 +169,50 @@ h1, h2, h3 {
 }
 
 /* Modal */
-.project-modal {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 20;
-  padding: 2rem;
-}
-
 .project-modal.hidden {
   display: none;
 }
 
+.project-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 1000;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
 .modal-content {
-  background: white;
+  background-color: white;
+  border-radius: 12px;
   padding: 2rem;
-  border-radius: 16px;
   max-width: 700px;
   width: 100%;
   position: relative;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
-.modal-content img {
-  max-width: 100%;
+.modal-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
   margin-bottom: 1rem;
-  border-radius: 8px;
-}
-
-.modal-content h3 {
-  margin-top: 0;
-}
-
-.project-description {
-  margin-top: 1rem;
-  line-height: 1.6;
-}
-
-.modal-cta {
-  display: inline-block;
-  margin-top: 1.5rem;
-  background: #4c8c64;
-  color: white;
-  padding: 0.7rem 1.2rem;
-  border-radius: 8px;
-  text-decoration: none;
 }
 
 .close-btn {
   position: absolute;
   top: 1rem;
-  right: 1.2rem;
+  right: 1rem;
   font-size: 1.5rem;
-  background: none;
+  background: transparent;
   border: none;
   cursor: pointer;
 }
@@ -255,27 +244,27 @@ h1, h2, h3 {
 
 @media (max-width: 480px) {
   .modal-content {
-    padding: 1.2rem;
-    border-radius: 12px;
-  }
-
-  .modal-content h3 {
-    font-size: 1.4rem;
-  }
-
-  .project-description {
+    padding: 1.25rem;
     font-size: 0.95rem;
   }
 
-  .modal-cta {
-    width: 100%;
-    padding: 0.9rem;
-    font-size: 1rem;
+  .modal-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .modal-content h4 {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+
+  .modal-img {
+    border-radius: 6px;
+    margin-bottom: 0.75rem;
   }
 
   .close-btn {
-    top: 0.5rem;
-    right: 0.8rem;
-    font-size: 1.2rem;
+    top: 0.75rem;
+    right: 0.75rem;
+    font-size: 1.25rem;
   }
 }
