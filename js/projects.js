@@ -143,7 +143,7 @@ const projectData = {
       { url: "https://www.notion.so/246626cf6e048079a0cad4a48bece0a1?v=246626cf6e048055b324000c37e25a5b&source=copy_link", label: "🔗Follow Along on Notion\n" },
     ],
     role: "Writer, researcher, and UX observer-in-chief. I’ll be analyzing apps, games, and everyday workflows through a product lens, with a focus on inclusion and intuition.",
-    tech: "Markdown-based blog (possibly hosted via GitHub Pages or Notion), light CSS styling, later migration to a CMS",
+    tech: "Markdown-based blog hosted on Notion, light CSS styling, later migration to a CMS.",
     description: "Demonstrates my ability to articulate product trade-offs. Shows how I apply my technical and human-centered background to real-world flows. A great way to build thought leadership while continuing to learn in public.",
     takeaway: "TBD"
   }
@@ -152,6 +152,7 @@ const projectData = {
 // blank project detail:
 // 7: {
 //     title: "",
+//     media: { type: "", src: "" },
 //     overview: "",
 //     role: "",
 //     tech: "",
