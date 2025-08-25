@@ -97,22 +97,22 @@ const projectData = {
     takeaway: "This taught me how to narrow in on core user actions and reduce complexity early—an essential PM skill when defining a first build."
   },
   2: {
-    title: "Wine Ordering System (IN PROGRESS)",
+    title: "CorkCount (IN PROGRESS)",
     media: { type: "image", src: "./imgs/wine.jpg" }, // replace with video demo 
     overview: "Building a simple website and ordering system for my father-in-law’s wine-sharing hobby—helping him distribute bottles to family and friends.",
     links: [
       { url: "https://www.notion.so/KB-Winery-248626cf6e0480b0bfbbd511a1edc203?source=copy_link", label: "🔗Follow Along on Notion\n" },
     ],
-    role: "Sole Designer & Developer — leading the UX, wireframing, and feature planning through interviews and collaborative iteration.",
-    tech: "Glide · Figma · Notion",
+    role: "Product Manager & Developer — leading the UX, wireframing, and feature planning through interviews and collaborative iteration.",
+    tech: "Lovable · Figma · Notion",
     description: "This project is giving me hands-on experience designing around a real stakeholder with specific goals and limitations. From early conversations, I’ve mapped a lightweight system that mirrors his offline habits and priorities, while translating them into digital flows. It’s a great exercise in building user empathy, prototyping early, and deciding what “just enough” looks like for launch.",
     takeaway: "This project blends stakeholder alignment with user-first thinking. It's a sandbox for practicing roadmap shaping, versioning, and feedback loops."
   },
   3: {
-    title: "Tech Content Channel (COMING SOON)",
+    title: "PingMe.Sis (IN PROGRESS)",
     media: { type: "image", src: "./imgs/tiktok.jpg" },
     overview: "Launching an educational IG & TikTok channel focused on tech, coding tips, and encouragement for Black women and underrepresented communities in STEM.",
-    role: "Content Creator, Strategist, and Visual Designer — scripting, filming, and experimenting with platform-native formats and inclusive storytelling.",
+    role: "Founder, Product Manager — scripting, filming, and experimenting with platform-native formats and inclusive storytelling.",
     tech: "Canva · CapCut · Figma · Notion · Later",
     description: "By treating content creation like product delivery, I’m experimenting with audience-driven strategy, accessible messaging, and platform-native storytelling. Each post is a mini product: scoped, tailored to my target users, and designed to deliver value. I’m also testing feedback loops through analytics to refine what resonates—blending creative intuition with iterative thinking.",
     takeaway: "This is product thinking in the wild—discovering your audience, shaping value delivery, and iterating based on real feedback."
@@ -127,10 +127,10 @@ const projectData = {
     takeaway: "TBD"
   },
   5: {
-    title: "Tiny Saas: Family Trip Planner",
+    title: "PlanDemic: A Group Trip Planner",
     media: { type: "image", src: "./imgs/travel.jpg" },
     overview: "Born from lived chaos: this tool is a lightweight trip planning app for families juggling dates, to-dos, and packing lists. Think shared timelines, who’s bringing what, and maybe… a gentle emoji-based mood tracker.",
-    role: "Everything—from planning the MVP feature list to designing the UI and user flow. Drawing inspiration from real family travel friction + my own PM toolkit.",
+    role: "Product Manager and everything—from planning the MVP feature list to designing the UI and user flow. Drawing inspiration from real family travel friction + my own PM toolkit.",
     tech: "React · Firebase or Supabase · Framer Motion for UI polish",
     description: "Built around a real user persona (my fam!). Prioritizing simplicity, shareability, and mobile-first UX. Opportunity to explore collaborative flows, notifications, and value per feature",
     takeaway: "TBD"
