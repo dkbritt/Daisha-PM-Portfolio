@@ -226,6 +226,24 @@ h1, h2, h3 {
   cursor: pointer;
 }
 
+.cork-demo-video {
+  display: block;
+  width: 40%;
+  /* max-width: 600px; */
+  height: 60%;
+  border-radius: 8px; /* optional polish */
+  margin: 0 auto;
+}
+
+.reddit-demo-video {
+  display: block;
+  width: 100%;
+  /* max-width: 600px; */
+  height: auto;
+  border-radius: 8px; /* optional polish */
+  margin: 0 auto;
+}
+
 @media (max-width: 768px) {
   .projects-header {
     padding: 3rem 1.5rem 1.5rem;

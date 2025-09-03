@@ -40,7 +40,8 @@ cards.forEach(card => {
         const video = document.createElement('video');
         video.src = project.media.src;
         video.controls = true;
-        video.style.width = '100%';
+        // video.style.width = '100%';
+        video.className = project.media.className;
         modalImg.parentNode.insertBefore(video, modalImg.nextSibling);
       } else {
         modalImg.style.display = 'none';
@@ -79,13 +80,13 @@ closeBtn.addEventListener('click', () => {
 
 
   // For images use --> media: { type: "image", src: "imgs/pc.jpg" },
-  // F or video use --> media: { type: "video", src: "media/demo.mp4" },
+  // For videos use --> media: { type: "video", src: "media/demo.mp4" },
   //                    ...other fields...
 
 const projectData = {
   1: {
     title: "Minimalistic Reddit Clone",
-    media: { type: "video", src: "./imgs/RedditLurker.mp4" },
+    media: { type: "video", src: "./imgs/RedditLurker.mp4", className:"reddit-demo-video" },
     overview: "A simplified full-stack clone of Reddit, built as part of my full-stack certification course to sharpen my frontend-to-backend integration skills.",
     links: [
       { url: "https://github.com/dkbritt/My-Reddit-Client", label: "🔗GitHub Repo\n" },
@@ -98,11 +99,11 @@ const projectData = {
   },
   2: {
     title: "CorkCount",
-    media: { type: "video", src: "./imgs/CorkCount_demo_official.mp4" }, // replace with video demo 
+    media: { type: "video", src: "./imgs/CorkCount_demo_official.mp4", className:"cork-demo-video"},
     overview: "Building a simple website and ordering system for my father-in-law’s wine-sharing hobby—helping him distribute bottles to family and friends.",
     links: [
       { url: "https://www.notion.so/KB-Winery-248626cf6e0480b0bfbbd511a1edc203?source=copy_link", label: "🔗Follow Along on Notion\n" },
-      {url: "https://github.com/dkbritt/CorkCount", label: "🔗 Github Repo\n"},
+      {url: "https://github.com/dkbritt/CorkCount", label: "🔗Github Repo\n"},
     ],
     role: "Product Manager & Developer — leading the UX, wireframing, and feature planning through interviews and collaborative iteration.",
     tech: "Builder.io · Figma · Notion",
