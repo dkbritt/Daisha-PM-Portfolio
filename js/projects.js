@@ -97,14 +97,15 @@ const projectData = {
     takeaway: "This taught me how to narrow in on core user actions and reduce complexity early—an essential PM skill when defining a first build."
   },
   2: {
-    title: "CorkCount (IN PROGRESS)",
-    media: { type: "image", src: "./imgs/wine.jpg" }, // replace with video demo 
+    title: "CorkCount",
+    media: { type: "video", src: "./imgs/CorkCount_demo_official.mp4" }, // replace with video demo 
     overview: "Building a simple website and ordering system for my father-in-law’s wine-sharing hobby—helping him distribute bottles to family and friends.",
     links: [
       { url: "https://www.notion.so/KB-Winery-248626cf6e0480b0bfbbd511a1edc203?source=copy_link", label: "🔗Follow Along on Notion\n" },
+      {url: "https://github.com/dkbritt/CorkCount", label: "🔗 Github Repo\n"},
     ],
     role: "Product Manager & Developer — leading the UX, wireframing, and feature planning through interviews and collaborative iteration.",
-    tech: "Lovable · Figma · Notion",
+    tech: "Builder.io · Figma · Notion",
     description: "This project is giving me hands-on experience designing around a real stakeholder with specific goals and limitations. From early conversations, I’ve mapped a lightweight system that mirrors his offline habits and priorities, while translating them into digital flows. It’s a great exercise in building user empathy, prototyping early, and deciding what “just enough” looks like for launch.",
     takeaway: "This project blends stakeholder alignment with user-first thinking. It's a sandbox for practicing roadmap shaping, versioning, and feedback loops."
   },
