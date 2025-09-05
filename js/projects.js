@@ -102,6 +102,7 @@ const projectData = {
     media: { type: "video", src: "./imgs/CorkCount_demo_official.mp4", className:"cork-demo-video"},
     overview: "Building a simple website and ordering system for my father-in-law’s wine-sharing hobby—helping him distribute bottles to family and friends.",
     links: [
+      { url: "", label: "🔗Live Demo (COMING SOON)" },
       { url: "https://www.notion.so/KB-Winery-248626cf6e0480b0bfbbd511a1edc203?source=copy_link", label: "🔗Follow Along on Notion\n" },
       {url: "https://github.com/dkbritt/CorkCount", label: "🔗Github Repo\n"},
     ],
@@ -114,6 +115,10 @@ const projectData = {
     title: "PingMe.Sis (IN PROGRESS)",
     media: { type: "image", src: "./imgs/tiktok.jpg" },
     overview: "Launching an educational IG & TikTok channel focused on tech, coding tips, and encouragement for Black women and underrepresented communities in STEM.",
+    links: [
+      { url: "https://www.instagram.com/pingme.sis/", label: "🔗Instagram" },
+      { url: "https://www.tiktok.com/@pingme.sis0?_t=ZT-8zTpXplro6f&_r=1", label: "🔗TikTok\n" },
+    ],
     role: "Founder, Product Manager — scripting, filming, and experimenting with platform-native formats and inclusive storytelling.",
     tech: "Canva · CapCut · Figma · Notion · Later",
     description: "By treating content creation like product delivery, I’m experimenting with audience-driven strategy, accessible messaging, and platform-native storytelling. Each post is a mini product: scoped, tailored to my target users, and designed to deliver value. I’m also testing feedback loops through analytics to refine what resonates—blending creative intuition with iterative thinking.",
@@ -132,6 +137,11 @@ const projectData = {
     title: "PlanDemic: A Group Trip Planner",
     media: { type: "image", src: "./imgs/travel.jpg" },
     overview: "Born from lived chaos: this tool is a lightweight trip planning app for families juggling dates, to-dos, and packing lists. Think shared timelines, who’s bringing what, and maybe… a gentle emoji-based mood tracker.",
+    links: [
+      { url: "https://www.notion.so/PlanDemic-A-Group-Trip-Planner-25b626cf6e0480f09becc0f63045fb02?source=copy_link", label: "🔗Follow Along on Notion\n" },
+      { url: "", label: "🔗Live Demo (COMING SOON)" },
+      {url: "", label: "🔗Github Repo (COMING SOON\n"},
+    ],
     role: "Product Manager and everything—from planning the MVP feature list to designing the UI and user flow. Drawing inspiration from real family travel friction + my own PM toolkit.",
     tech: "React · Firebase or Supabase · Framer Motion for UI polish",
     description: "Built around a real user persona (my fam!). Prioritizing simplicity, shareability, and mobile-first UX. Opportunity to explore collaborative flows, notifications, and value per feature",
