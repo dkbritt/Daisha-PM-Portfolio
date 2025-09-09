@@ -100,7 +100,7 @@ const projectData = {
   2: {
     title: "CorkCount",
     media: { type: "video", src: "./imgs/CorkCount_demo_official.mp4", className:"cork-demo-video"},
-    overview: "Building a simple website and ordering system for my father-in-law’s wine-sharing hobby—helping him distribute bottles to family and friends.",
+    overview: "Built a simple website and ordering system for my father-in-law’s wine-sharing hobby—helping him to track inventory, in-progress batches, and share bottles with family, friends, and the local community.\nThis project was completed from concept to launch in under 30 days!",
     links: [
       { url: "", label: "🔗Live Demo (COMING SOON)" },
       { url: "https://www.notion.so/KB-Winery-248626cf6e0480b0bfbbd511a1edc203?source=copy_link", label: "🔗Follow Along on Notion\n" },
@@ -108,8 +108,8 @@ const projectData = {
     ],
     role: "Product Manager & Developer — leading the UX, wireframing, and feature planning through interviews and collaborative iteration.",
     tech: "Builder.io · Figma · Notion",
-    description: "This project is giving me hands-on experience designing around a real stakeholder with specific goals and limitations. From early conversations, I’ve mapped a lightweight system that mirrors his offline habits and priorities, while translating them into digital flows. It’s a great exercise in building user empathy, prototyping early, and deciding what “just enough” looks like for launch.",
-    takeaway: "This project blends stakeholder alignment with user-first thinking. It's a sandbox for practicing roadmap shaping, versioning, and feedback loops."
+    description: "This project gave me hands-on experience designing around a real stakeholder with specific goals and limitations. From early conversations, I’ve mapped a lightweight system that mirrors his offline habits and priorities, while translating them into digital flows. It’s a great exercise in building user empathy, prototyping early, and deciding what “just enough” looks like for launch.",
+    takeaway: "This project blended stakeholder alignment with user-first thinking. It was a sandbox for practicing roadmap shaping, versioning, and feedback loops."
   },
   3: {
     title: "PingMe.Sis (IN PROGRESS)",
@@ -150,12 +150,12 @@ const projectData = {
   6: {
     title: "Micro-Case Blog: PM in Progress",
     media: { type: "image", src: "./imgs/blog.jpg" },
-    overview: "A living journal of product thinking—this blog explores what I’m learning, noticing, and questioning as I transition into product. From UI critiques to roadmap reflections, each post breaks down a small moment in tech with curiosity and care.",
+    overview: "A living journal of product thinking. This blog explores what I’m learning, noticing, and questioning as I transition into product. From UI critiques to roadmap reflections, each post breaks down a small moment in tech with curiosity and care.",
     links: [
       { url: "https://www.notion.so/246626cf6e048079a0cad4a48bece0a1?v=246626cf6e048055b324000c37e25a5b&source=copy_link", label: "🔗Follow Along on Notion\n" },
     ],
     role: "Writer, researcher, and UX observer-in-chief. I’ll be analyzing apps, games, and everyday workflows through a product lens, with a focus on inclusion and intuition.",
-    tech: "Markdown-based blog hosted on Notion, light CSS styling, later migration to a CMS.",
+    tech: "Markdown-based blog hosted on Notion",
     description: "Demonstrates my ability to articulate product trade-offs. Shows how I apply my technical and human-centered background to real-world flows. A great way to build thought leadership while continuing to learn in public.",
     takeaway: "TBD"
   }
