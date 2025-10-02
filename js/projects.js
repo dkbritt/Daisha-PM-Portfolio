@@ -102,7 +102,7 @@ const projectData = {
     media: { type: "video", src: "./imgs/CorkCount_demo_official.mp4", className:"cork-demo-video"},
     overview: "Built a simple website and ordering system for my father-in-law’s wine-sharing hobby—helping him to track inventory, in-progress batches, and share bottles with family, friends, and the local community.\nThis project was completed from concept to launch in under 30 days!",
     links: [
-      { url: "", label: "🔗Live Demo (COMING SOON)" },
+      { url: "https://corkcount-demo.netlify.app/", label: "🔗Live Demo" },
       { url: "https://www.notion.so/KB-Winery-248626cf6e0480b0bfbbd511a1edc203?source=copy_link", label: "🔗Follow Along on Notion\n" },
       {url: "https://github.com/dkbritt/CorkCount", label: "🔗Github Repo\n"},
     ],
@@ -140,7 +140,7 @@ const projectData = {
     links: [
       { url: "https://www.notion.so/PlanDemic-A-Group-Trip-Planner-25b626cf6e0480f09becc0f63045fb02?source=copy_link", label: "🔗Follow Along on Notion\n" },
       { url: "", label: "🔗Live Demo (COMING SOON)" },
-      {url: "", label: "🔗Github Repo (COMING SOON\n"},
+      {url: "", label: "🔗Github Repo (COMING SOON)\n"},
     ],
     role: "Product Manager and everything—from planning the MVP feature list to designing the UI and user flow. Drawing inspiration from real family travel friction + my own PM toolkit.",
     tech: "React · Firebase or Supabase · Framer Motion for UI polish",
